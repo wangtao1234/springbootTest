@@ -27,4 +27,10 @@ public class UserServiceImpl implements UserService {
         PageHelper.startPage(pageNum, pageSize);
         return userMapper.selectAllUser();
     }
+
+    @Override
+    public User getUser() {
+        System.out.println("调用AOP测试");
+        return null;
+    }
 }
